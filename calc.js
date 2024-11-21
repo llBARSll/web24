@@ -10,12 +10,17 @@ function clearDisplay(){
 
 function calculate() {
     try {
-        let numbers = display.value.split(/(\D)/).filter(Boolean);
-        let result = parseFloat(numbers[0]);
+        let expression = display.value.match(/(\d+\.?\d*|\.\d+|\D)/g);
+        if (expression === null) {
+            display.value = "Error";
+            return;
+        }
+        
+        let result = parseFloat(expression[0]);
 
-        for (let i = 1; i < numbers.length; i += 2) {
-            let operator = numbers[i];
-            let nextNumber = parseFloat(numbers[i + 1]);
+        for (let i = 1; i < expression.length; i += 2) {
+            let operator = expression[i];
+            let nextNumber = parseFloat(expression[i + 1]);
 
             switch (operator) {
                 case '+':
@@ -37,7 +42,7 @@ function calculate() {
         }
 
         display.value = result;
-    } catch (Error) {
+    } catch (error) {
         display.value = "Error";
     }
 }
