@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header:hover{
+    border:2px solid red;
+    cursor: pointer;
+    }
+    
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #444;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #444;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.job h3 {
+    margin: 0;
+    color: #444;
+    font-size: 1.2em;
+}
+
+.job p {
+    margin: 5px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: lightskyblue;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+}
+.footer:hover{
+    background: lightseagreen;
+    cursor: progress;
+}
